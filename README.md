@@ -15,3 +15,6 @@
 <img width="12" />
 
 </div>
+
+
+![Iftekhar's Stats](https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark)
