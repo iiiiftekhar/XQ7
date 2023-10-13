@@ -2,8 +2,8 @@
 
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" alt="stats" height="180"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=iiiiftekhar&locale=en&hide_title=false&layout=compact&count_private=true&card_width=150&langs_count=10&theme=dracula&hide_border=false&order=2" height="180" alt="languages graph"/>
+<img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" alt="stats"  width="400" height="200"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=iiiiftekhar&locale=en&hide_title=false&layout=compact&count_private=true&card_width=150&langs_count=10&theme=dracula&hide_border=false&order=2"  width="400" height="200"" alt="languages graph"/>
 </p>
 
 
