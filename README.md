@@ -26,10 +26,10 @@
 
 <div align="center">
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs%20code.svg" height="40" alt="vscode_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs%20code.png" height="40" alt="vscode_logo"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android%20studio.svg" height="40" alt="android-studio_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android%20studio.png" height="40" alt="android-studio_logo"/>
 <img width="12" />
 
 </div>
