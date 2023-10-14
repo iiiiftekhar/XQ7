@@ -37,7 +37,7 @@
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/xcode.png" height="40" alt="xcode_logo"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android%20studio.png" height="40" alt="android-studio_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android-studio.png" height="40" alt="android-studio_logo"/>
 <img width="12" />
 
 </div>
