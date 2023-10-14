@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs%20code.png" height="40" alt="vscode_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs-code.png" height="40" alt="vscode_logo"/>
 <img width="12" />
 
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/xcode.png" height="40" alt="xcode_logo"/>
