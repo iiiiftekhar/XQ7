@@ -2,9 +2,13 @@
 
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" width="400" height="250" alt="stats" />
+<img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" width="400" height="250" alt="stats"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=iiiiftekhar&locale=en&hide_title=false&layout=compact&count_private=true&card_width=150&langs_count=6&theme=dracula&hide_border=false&order=2" width="400" height="250" alt="languages graph"/>
+</p>
+
+<p align="center">
+<img src="https://github-profile-trophy.vercel.app/?username=iiiiftekhar&theme=onedark" width="600" height="500" alt="trophies"/>
 </p>
 
 <h3 align="center""> Languages </h3>
