@@ -6,6 +6,8 @@
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=iiiiftekhar&locale=en&hide_title=false&layout=compact&count_private=true&card_width=150&langs_count=6&theme=dracula&hide_border=false&order=2" width="400" height="250" alt="languages graph"/>
 
+<img src="https://streak-stats.demolab.com?user=iiiiftekhar&locale=en&mode=daily&theme=drak&hide_border=false&border_radius=5&count_private=true&order=3" height="150" alt="streak graph"  />
+
 <img src="https://github-profile-trophy.vercel.app/?username=iiiiftekhar&theme=onedark&row=2&column=4" width="-500" height="" alt="trophies"/>
 </p>
 
