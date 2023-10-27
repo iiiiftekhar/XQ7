@@ -13,19 +13,22 @@
 <h3 align="center""> Languages </h3>
 
 <div align="center">
-<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/html.png" height="40" alt="html_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/html.png" height="40" alt="html"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/css.png" height="40" alt="css_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/css.png" height="40" alt="css"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/js.png" height="40" alt="css_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/js.png" height="40" alt="js"/>
+<img width="12" />
+
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/dart.png" height="40" alt="js"/>
 <img width="12" />
 </div>
 
 <div align="center">
 <h3 align="center""> Frameworks </h3>
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/bootstrap.png" height="40" alt="html_logo"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/bootstrap.png" height="40" alt="bootstrap"/>
 <img width="12" />
 </div>
 
@@ -43,6 +46,9 @@
 <img width="12" />
 
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android-studio.png" height="40" alt="android-studio_logo"/>
+<img width="12" />
+
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/flutter.png" height="40" alt="android-studio_logo"/>
 <img width="12" />
 
 </div>
