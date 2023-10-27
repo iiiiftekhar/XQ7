@@ -1,5 +1,4 @@
-**Hello, I'm Muhammad Iftekhar Fahami. I have a profound appreciation for coding.**
-
+**Hello, I'm Muhammad Iftekhar Fahami. I have a profound appreciation for coding and want to make the digital world a better place, one line of code at a time. Coding is a powerful tool for creating solutions and improving various aspects.**
 
 <p align="center">
 <img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" width="400" height="250" alt="stats"/>
