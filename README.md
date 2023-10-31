@@ -1,13 +1,9 @@
 **Hello, I'm Muhammad Iftekhar Fahami. I have a profound appreciation for coding and want to make the digital world a better place, one line of code at a time. Coding is a powerful tool for creating solutions and improving various aspects.**
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&theme=dark" width="400" height="250" alt="stats"/>
+<img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&show_icons=true&count_private=true&hide_border=true&title_color=00bfbf&icon_color=00bfbf&text_color=c9d1d9&bg_color=0d1117" alt="stats"/>
 
-<img src="https://streak-stats.demolab.com?user=iiiiftekhar&locale=en&mode=daily&theme=drakone&hide_border=false&border_radius=5&count_private=true&order=3" width="400" height="250" alt="streak graph"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=iiiiftekhar&locale=en&hide_title=false&layout=compact&count_private=true&card_width=150&langs_count=6&theme=dracula&hide_border=false&order=2" width="400" height="250" alt="languages graph"/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=iiiiftekhar&theme=onedark&row=2&column=4" width="400" height="250" alt="trophies"/>
+<img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iiiiftekhar&layout=compact&hide_border=true&title_color=00bfbf&text_color=00bfbf&bg_color=0d1117" alt="languages graph"/>
 </p>
 
 <h3 align="center""> Languages </h3>
