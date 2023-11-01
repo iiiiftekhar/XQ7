@@ -8,6 +8,8 @@
 
 <img width="45%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iiiiftekhar&theme=transparent&layout=compact&hide_border=true&title_color=00bfbf&text_color=00bfbf&bg_color=0d1117" alt="languages graph"/>
 
+<img width="45%" height="195px" src="https://readme-typing-svg.demolab.com?font=Texon&pause=1000&color=00BFBF&center=true&vCenter=true&random=false&width=435&height=195&lines=01001000+01101001" alt="typing"/>
+
 </div>
 
 <h3 align="center""> Languages </h3>
