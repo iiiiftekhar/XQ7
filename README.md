@@ -2,9 +2,9 @@
 
 <div align="center">
 
-<img width="45%" height="195px" src="https://streak-stats.demolab.com?user=iiiiftekhar&theme=transparent&hide_border=true&border_radius=2&card_width=500&stroke=00BFBF&ring=00BFBF&fire=00BFBF&dates=00BFBF&sideNums=00BFBF&sideLabels=00BFBF&currStreakNum=00BFBF&currStreakLabel=00BFBF" alt="streak"/>
-
 <img width="45%" height="195px" src="https://github-readme-stats.vercel.app/api?username=iiiiftekhar&theme=transparent&show_icons=true&count_private=true&hide_border=true&title_color=00bfbf&icon_color=00bfbf&text_color=c9d1d9&bg_color=0d1117" alt="stats"/>
+
+<img width="45%" height="195px" src="https://streak-stats.demolab.com?user=iiiiftekhar&theme=transparent&hide_border=true&border_radius=2&card_width=500&stroke=00BFBF&ring=00BFBF&fire=00BFBF&dates=00BFBF&sideNums=00BFBF&sideLabels=00BFBF&currStreakNum=00BFBF&currStreakLabel=00BFBF" alt="streak"/>
 
 </div>
 
