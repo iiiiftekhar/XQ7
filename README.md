@@ -9,6 +9,7 @@
 <h3 align="center""> Languages </h3>
 
 <div align="center">
+  
 <img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/html.png" height="40" alt="html"/>
 <img width="12" />
 
@@ -23,12 +24,19 @@
 
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/dart.png" height="40" alt="dart"/>
 <img width="12" />
+
 </div>
 
-<div align="center">
 <h3 align="center""> Frameworks </h3>
+
+<div align="center">
+  
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/flutter.png" height="40" alt="flutter"/>
+<img width="12" />
+
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/bootstrap.png" height="40" alt="bootstrap"/>
 <img width="12" />
+
 </div>
 
 <h3 align="center""> Tools </h3>
@@ -36,9 +44,6 @@
 <div align="center">
 
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs-code.png" height="40" alt="vscode"/>
-<img width="12" />
-
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/flutter.png" height="40" alt="flutter"/>
 <img width="12" />
 
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/android-studio.png" height="40" alt="android-studio"/>
