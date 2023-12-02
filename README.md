@@ -18,7 +18,10 @@
 <img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/js.png" height="40" alt="js"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/dart.png" height="40" alt="js"/>
+<img src="https://github.com/iiiiftekhar/iiiiftekhar-/blob/main/resources/python.png" height="40" alt="python"/>
+<img width="12" /> 
+
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/dart.png" height="40" alt="dart"/>
 <img width="12" />
 </div>
 
