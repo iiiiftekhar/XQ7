@@ -43,6 +43,9 @@
 
 <div align="center">
 
+<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/git.png" height="40" alt="git"/>
+<img width="12" />
+
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/vs-code.png" height="40" alt="vscode"/>
 <img width="12" />
 
