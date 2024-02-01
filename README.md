@@ -1,5 +1,3 @@
-**Hello There, I'm Muhammad Iftekhar Fahami. I am a passionate architect of the digital realm, wielding the power of code to sculpt innovative solutions and enhance the fabric of our interconnected world. I have a profound appreciation for coding and want to make the digital world a better place, one line of code at a time. Coding is a powerful tool for creating solutions and improving various aspects.**
-
 <div align="center">
 
 <img width="50%" height="200px" src="https://streak-stats.demolab.com?user=iiiiftekhar&theme=transparent&hide_border=true&border_radius=2&card_width=500&stroke=00BFBF&ring=00BFBF&fire=00BFBF&dates=00BFBF&sideNums=00BFBF&sideLabels=00BFBF&currStreakNum=00BFBF&currStreakLabel=00BFBF" alt="streak"/>
