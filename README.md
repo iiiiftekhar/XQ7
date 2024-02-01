@@ -1,4 +1,4 @@
-**Hello, I'm Muhammad Iftekhar Fahami. I have a profound appreciation for coding and want to make the digital world a better place, one line of code at a time. Coding is a powerful tool for creating solutions and improving various aspects.**
+**Hello There, I'm Muhammad Iftekhar Fahami. I am a passionate architect of the digital realm, wielding the power of code to sculpt innovative solutions and enhance the fabric of our interconnected world. I have a profound appreciation for coding and want to make the digital world a better place, one line of code at a time. Coding is a powerful tool for creating solutions and improving various aspects.**
 
 <div align="center">
 
