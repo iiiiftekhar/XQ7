@@ -32,9 +32,6 @@
 <img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/flutter.png" height="40" alt="flutter"/>
 <img width="12" />
 
-<img src="https://github.com/iiiiftekhar/iiiiftekhar/blob/main/resources/bootstrap.png" height="40" alt="bootstrap"/>
-<img width="12" />
-
 </div>
 
 <h3 align="center""> Tools </h3>
