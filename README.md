@@ -5,7 +5,7 @@ class Coordinate2D:
         self.latitude = latitude
         self.longitude = longitude
 
-class Nevio:
+class iftekhar:
     def __init__(self):
         self.name = "Muhammad Iftekhar Fahami"
         self.languages = ["en_UK"]
