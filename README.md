@@ -1,10 +1,5 @@
 ```PYTHON
 
-class Coordinate2D:
-    def __init__(self, latitude, longitude):
-        self.latitude = latitude
-        self.longitude = longitude
-
 class iftekhar:
     def __init__(self):
         self.name = "Muhammad Iftekhar Fahami"
