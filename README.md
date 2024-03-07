@@ -4,7 +4,7 @@ class iftekhar:
     def __init__(self):
         self.name = "Muhammad Iftekhar Fahami"
         self.languages = ["en_UK"]
-        self.language = ["Javascript" "Python"]
+        self.language = ["Python" "Javascript"]
 
     def say_hi(self):
         print("")
