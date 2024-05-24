@@ -5,6 +5,6 @@ class iftekhar:
   self.language = ["Python"]
 
   def say_hi(self):
-    print("")
+    print("Hello")
 
 ```
