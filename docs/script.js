@@ -1,26 +1,19 @@
+// Smooth scrolling function
 function scrollToElement(elementSelector, instance = 0) {
-  // Select all elements that match the given selector
   const elements = document.querySelectorAll(elementSelector);
-  // Check if there are elements matching the selector and if the requested instance exists
   if (elements.length > instance) {
-    // Scroll to the specified instance of the element
-    elements[instance].scrollIntoView({ behavior: 'smooth' });
+    elements[instance].scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
 
-const link1 = document.getElementById('link1');
-const link2 = document.getElementById('link2');
-const link3 = document.getElementById('link3');
-
-link1.addEventListener('click', () => {
-  scrollToElement('.header');
-});
-
-link2.addEventListener('click', () => {
-  // Scroll to the second element with "header" class
-  scrollToElement('.header', 1);
-});
-
-link3.addEventListener('click', () => {
-  scrollToElement('.column');
+// Event listeners for smooth scrolling
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('.scroll-link');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      const target = link.getAttribute('data-target');
+      const instance = link.getAttribute('data-instance') || 0;
+      scrollToElement(target, instance);
+    });
+  });
 });
