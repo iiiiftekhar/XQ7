@@ -1,7 +1,10 @@
-/* Import Google Fonts for better typography */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* Use CSS variables for easier theming */
+@font-face {
+    font-family: Poppins;
+    src: url(\resources\fonts\Poppins-Bold) format("truetype");
+}
+
+
 :root {
     --primary-color: #1d4ed8;
     --secondary-color: #1e40af;
@@ -9,7 +12,7 @@
     --accent-color: #ccc;
 }
 
-/* Optimize and consolidate common styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #18181b;
@@ -23,7 +26,7 @@ body {
     padding: 2rem;
 }
 
-/* Enhance header styles */
+
 header {
     padding-top: 2rem;
     display: flex;
@@ -51,7 +54,7 @@ nav {
     -webkit-text-stroke: 1px var(--text-color);
 }
 
-/* Enhance footer styles */
+
 footer {
     padding: 2rem 0;
     background-color: #27272a;
@@ -61,7 +64,7 @@ footer {
     max-width: 100px;
 }
 
-/* Responsive styles */
+
 @media (max-width: 900px) {
     header {
         flex-direction: column;

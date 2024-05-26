@@ -1,4 +1,4 @@
-// Smooth scrolling function
+
 function scrollToElement(elementSelector, instance = 0) {
   const elements = document.querySelectorAll(elementSelector);
   if (elements.length > instance) {
@@ -6,7 +6,6 @@ function scrollToElement(elementSelector, instance = 0) {
   }
 }
 
-// Event listeners for smooth scrolling
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('.scroll-link');
   links.forEach(link => {
