@@ -1,41 +1,41 @@
-
 @font-face {
     font-family: Poppins;
-    src: url(\resources\fonts\Poppins-Bold) format("truetype");
+    src: url(/resources/fonts/Poppins-Bold) format("truetype");
 }
-
 
 :root {
     --primary-color: #1d4ed8;
     --secondary-color: #1e40af;
     --text-color: #fff;
     --accent-color: #ccc;
+    --background-color: #18181b;
+    --button-background: #27272a;
+    --button-hover: #1f2937;
 }
-
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #18181b;
+    background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
+    padding: 0;
 }
 
 .container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 2rem;
+    text-align: center;
 }
-
 
 header {
     padding-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
+}
 
 nav {
     padding: 1rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-logo img {
@@ -49,21 +49,42 @@ nav {
     margin-bottom: 1rem;
 }
 
-.content h1 span {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--text-color);
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: var(--button-hover);
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+    color: transparent;
+    /* Ensures icon remains transparent */
+}
 
 footer {
     padding: 2rem 0;
-    background-color: #27272a;
+    background-color: var(--button-background);
 }
 
 .footer-logo img {
     max-width: 100px;
 }
-
 
 @media (max-width: 900px) {
     header {
