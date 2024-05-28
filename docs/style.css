@@ -1,8 +1,10 @@
+/* Define font face */
 @font-face {
     font-family: Poppins;
     src: url(/resources/fonts/Poppins-Bold) format("truetype");
 }
 
+/* Root variables */
 :root {
     --primary-color: #1d4ed8;
     --secondary-color: #1e40af;
@@ -13,6 +15,7 @@
     --button-hover: #1f2937;
 }
 
+/* Body styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
@@ -21,6 +24,7 @@ body {
     padding: 0;
 }
 
+/* Container styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -28,20 +32,41 @@ body {
     text-align: center;
 }
 
+/* Header styles */
 header {
     padding-top: 2rem;
 }
 
+/* Navigation styles */
 nav {
     padding: 1rem 0;
     display: flex;
     justify-content: center;
+    /* Adjusted to center the navigation */
+    align-items: center;
 }
 
 .nav-logo img {
     max-width: 100px;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* Content styles */
 .content h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -49,6 +74,7 @@ nav {
     margin-bottom: 1rem;
 }
 
+/* Button container styles */
 .button-container {
     display: flex;
     justify-content: center;
@@ -56,6 +82,7 @@ nav {
     margin-top: 1.5rem;
 }
 
+/* Social button styles */
 .social-button {
     display: inline-flex;
     align-items: center;
@@ -74,9 +101,9 @@ nav {
     width: 30px;
     height: 30px;
     color: transparent;
-    /* Ensures icon remains transparent */
 }
 
+/* Footer styles */
 footer {
     padding: 2rem 0;
     background-color: var(--button-background);
@@ -86,13 +113,21 @@ footer {
     max-width: 100px;
 }
 
-@media (max-width: 900px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+/* Adjustments to center the navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .image {
-        margin-top: 2rem;
-    }
+.nav-links {
+    display: none;
+    /* Hide the nav links */
+}
+
+/* Remove the gray stripe */
+footer {
+    padding: 2rem 0;
+    background-color: transparent;
+    /* Set background color to transparent */
 }
