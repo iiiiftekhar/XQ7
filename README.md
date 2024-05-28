@@ -7,6 +7,5 @@ iftekhar = {
   'contact': {
     'email': 'iftekhar@tuta.io',
     'linkedin': 'https://www.linkedin.com/in/iiiiftekhar/',
-    'github': 'https://github.com/iiiiftekhar'
-  }
+    'github': 'https://github.com/iiiiftekhar' }
 }
