@@ -1,7 +1,7 @@
 /* Define font face */
 @font-face {
     font-family: Poppins;
-    src: url(/resources/fonts/Poppins-Bold) format("truetype");
+    src: url(/fonts/Poppins-Bold) format("truetype");
 }
 
 /* Root variables */
