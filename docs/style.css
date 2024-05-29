@@ -1,18 +1,18 @@
 @font-face {
-    font-family: Poppins;
-    src: url(/fonts/Poppins-Bold) format("truetype");
+    font-family: Ubuntu;
+    src: url(\fonts\Ubuntu-Regular.ttf) format("truetype");
 }
 
 :root {
-    --primary-color: #000000;
-    /* Black */
-    --secondary-color: #000000;
-    /* Black */
-    --text-color: #000000;
-    /* Black */
-    --accent-color: #ccc;
-    --background-color: #ffffff;
+    --primary-color: #ffffff;
     /* White */
+    --secondary-color: #ffffff;
+    /* White */
+    --text-color: #ffffff;
+    /* White */
+    --accent-color: #ccc;
+    --background-color: #333333;
+    /* Mix of black and grey */
     --button-background: #27272a;
     --button-hover: #1f2937;
 }
@@ -70,33 +70,6 @@ nav {
     margin-bottom: 1rem;
 }
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--button-background);
-    padding: 6px;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.social-button:hover {
-    background-color: var(--button-hover);
-}
-
-.social-button img {
-    width: 30px;
-    height: 30px;
-    color: transparent;
-}
-
 footer {
     padding: 2rem 0;
     background-color: var(--button-background);
@@ -119,4 +92,16 @@ nav {
 footer {
     padding: 2rem 0;
     background-color: transparent;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
 }
