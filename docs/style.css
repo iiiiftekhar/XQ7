@@ -105,3 +105,32 @@ footer {
         line-height: 3rem;
     }
 }
+
+/* Button modifications */
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+    padding: 10px;
+    /* Adjust padding to increase button size */
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-button img {
+    width: 30px;
+    /* Adjust the size of the icons */
+    height: 30px;
+    /* Adjust the size of the icons */
+    color: white;
+    /* Set the color of the icons to white */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adjust the gap between buttons */
+    margin-top: 1.5rem;
+}
