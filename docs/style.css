@@ -11,8 +11,8 @@
     --text-color: #ffffff;
     /* White */
     --accent-color: #ccc;
-    --background-color: #333333;
-    /* Mix of black and grey */
+    --background-color: #1a1a1a;
+    /* Darker mix of black and grey */
     --button-background: #27272a;
     --button-hover: #1f2937;
 }
