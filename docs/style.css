@@ -1,18 +1,14 @@
 @font-face {
-    font-family: Ubuntu;
-    src: url(\resources\fonts\Ubuntu-Bold.ttf) format("truetype");
+    font-family: 'Ubuntu';
+    src: url('resources/fonts/Ubuntu-Bold.ttf') format('truetype');
 }
 
 :root {
     --primary-color: #ffffff;
-    /* White */
     --secondary-color: #ffffff;
-    /* White */
     --text-color: #ffffff;
-    /* White */
     --accent-color: #ccc;
-    --background-color: #222222;
-    /* Slightly brighter mix of black and grey */
+    --background-color: #1a1a1a;
     --button-background: #27272a;
     --button-hover: #1f2937;
 }
@@ -23,6 +19,10 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -34,33 +34,7 @@ body {
 
 header {
     padding-top: 2rem;
-}
-
-nav {
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-logo img {
-    max-width: 100px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links li a {
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-    color: var(--primary-color);
+    flex: 1;
 }
 
 .content h1 {
@@ -70,31 +44,46 @@ nav {
     margin-bottom: 1rem;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1.5rem;
+}
+
+.social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.social-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-button:hover {
+    background-color: var(--button-hover);
+}
+
 footer {
-    padding: 2rem 0;
+    padding: 1rem 0;
+    background-color: transparent;
+    text-align: right;
+    position: relative;
+}
+
+.footer-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     background-color: var(--button-background);
 }
 
-.footer-logo img {
-    max-width: 100px;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-links {
-    display: none;
-}
-
-footer {
-    padding: 2rem 0;
-    background-color: transparent;
-}
-
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -104,33 +93,21 @@ footer {
         font-size: 2rem;
         line-height: 3rem;
     }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
-/* Button modifications */
-.social-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--button-background);
-    padding: 10px;
-    /* Adjust padding to increase button size */
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
+@media screen and (max-width: 480px) {
+    .content h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
 
-.social-button img {
-    width: 30px;
-    /* Adjust the size of the icons */
-    height: 30px;
-    /* Adjust the size of the icons */
-    color: white;
-    /* Set the color of the icons to white */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    /* Adjust the gap between buttons */
-    margin-top: 1.5rem;
+    .social-button img {
+        width: 25px;
+        height: 25px;
+    }
 }
