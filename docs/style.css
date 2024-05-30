@@ -69,23 +69,6 @@ header {
     background-color: var(--button-hover);
 }
 
-footer {
-    background-color: transparent;
-    text-align: right;
-    position: relative;
-    padding: 1rem 2rem;
-    margin-top: auto;
-}
-
-.footer-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: var(--button-background);
-    border-radius: 50%;
-    padding: 10px;
-}
-
 @media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
