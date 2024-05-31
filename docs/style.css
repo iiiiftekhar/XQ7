@@ -69,6 +69,8 @@ header {
     background-color: var(--button-hover);
 }
 
+/* Commented out or removed media queries for mobile views */
+/*
 @media screen and (max-width: 768px) {
     .container {
         padding: 1rem;
@@ -96,3 +98,4 @@ header {
         height: 25px;
     }
 }
+*/
