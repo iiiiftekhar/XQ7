@@ -68,34 +68,3 @@ header {
 .social-button:hover {
     background-color: var(--button-hover);
 }
-
-/* Commented out or removed media queries for mobile views */
-/*
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 1rem;
-    }
-
-    .content h1 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .button-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .content h1 {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
-
-    .social-button img {
-        width: 25px;
-        height: 25px;
-    }
-}
-*/

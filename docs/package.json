@@ -1,0 +1,15 @@
+{
+  "name": "advanced-website-electron",
+  "version": "1.0.0",
+  "description": "An advanced Electron-based desktop application for Iftekhar's website.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Iftekhar",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^latest"
+  }
+}
