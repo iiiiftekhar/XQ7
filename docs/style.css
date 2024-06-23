@@ -68,3 +68,25 @@ header {
 .social-button:hover {
     background-color: var(--button-hover);
 }
+
+.repo-source-button {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.repo-source-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.repo-source-button:hover {
+    background-color: var(--button-hover);
+}
