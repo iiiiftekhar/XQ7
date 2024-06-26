@@ -6,18 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to add smooth scroll effect for repo source button
-    function smoothScrollRepoButton() {
+    function setupRepoButton() {
         const repoButton = document.querySelector('.repo-source-button');
         repoButton.addEventListener('click', function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: 'smooth'
-                });
-            }
+            event.preventDefault(); // Prevent default behavior
+            window.open(this.href, '_blank'); // Open the GitHub repository in a new tab
         });
     }
 
@@ -48,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize all functions
     function init() {
         animateHeaderText();
-        smoothScrollRepoButton();
+        setupRepoButton();
         addHoverEffectsToSocialButtons();
         // Uncomment the line below to dynamically load a font
         // loadFont('Ubuntu', 'resources/fonts/Ubuntu-Bold.ttf');
