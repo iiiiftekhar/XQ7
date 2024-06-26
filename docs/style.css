@@ -1,8 +1,10 @@
+/* Import Ubuntu font */
 @font-face {
     font-family: 'Ubuntu';
     src: url('resources/fonts/Ubuntu-Bold.ttf') format('truetype');
 }
 
+/* Define CSS variables for colors */
 :root {
     --primary-color: #ffffff;
     --secondary-color: #ffffff;
@@ -13,10 +15,14 @@
     --button-hover: #1f2937;
 }
 
+/* Base styles for the body */
 body {
     font-family: 'Poppins', sans-serif;
+    /* Set the base font */
     background-color: var(--background-color);
+    /* Use background color from variables */
     color: var(--text-color);
+    /* Use text color from variables */
     margin: 0;
     padding: 0;
     display: flex;
@@ -24,6 +30,7 @@ body {
     min-height: 100vh;
 }
 
+/* Container to center content */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,33 +38,43 @@ body {
     text-align: center;
 }
 
+/* Header styles */
 header {
     padding-top: 2rem;
     flex: 1;
 }
 
+/* Styles for the header content */
 .content h1 {
     font-size: 3rem;
+    /* Large font size for header text */
     font-weight: 700;
+    /* Bold text */
     line-height: 4rem;
     margin-bottom: 1rem;
 }
 
+/* Button container styles */
 .button-container {
     display: flex;
     justify-content: center;
+    /* Center the buttons */
     gap: 20px;
+    /* Space between buttons */
     margin-top: 1.5rem;
 }
 
+/* Social button styles */
 .social-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--button-background);
+    /* Use button background color from variables */
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
 }
 
 .social-button img {
@@ -67,8 +84,10 @@ header {
 
 .social-button:hover {
     background-color: var(--button-hover);
+    /* Change background color on hover */
 }
 
+/* Repo source button styles */
 .repo-source-button {
     position: fixed;
     left: 20px;
@@ -77,9 +96,11 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--button-background);
+    /* Use button background color from variables */
     padding: 10px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
 }
 
 .repo-source-button img {
@@ -89,4 +110,35 @@ header {
 
 .repo-source-button:hover {
     background-color: var(--button-hover);
+    /* Change background color on hover */
+}
+
+/* Fade-in effect for header text */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s forwards;
+    /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /* Final opacity */
+        transform: translateY(0);
+        /* Final position */
+    }
+}
+
+/* Hover effect for social buttons */
+.social-button.hovered {
+    transform: scale(1.1);
+    /* Slightly enlarge the button */
+}
+
+/* Smooth transition for hover effects */
+.social-button,
+.repo-source-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
 }
