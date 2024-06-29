@@ -38,11 +38,36 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Function to create an interactive effect on scroll
+    function setupScrollEffect() {
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            } else {
+                header.style.backgroundColor = 'transparent';
+            }
+        });
+    }
+
+    // Function to update the current time and date
+    function updateDateTime() {
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+        const date = now.toLocaleDateString();
+
+        document.getElementById('current-time').textContent = time;
+        document.getElementById('current-date').textContent = date;
+    }
+
     // Initialize all functions
     function init() {
         animateHeaderText();
         setupRepoButton();
         addHoverEffectsToSocialButtons();
+        setupScrollEffect();
+        updateDateTime();
+        setInterval(updateDateTime, 1000); // Update the time every second
         // Uncomment the line below to dynamically load a font
         // loadFont('Ubuntu', 'resources/fonts/Ubuntu-Bold.ttf');
     }

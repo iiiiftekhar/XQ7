@@ -13,6 +13,8 @@
     --background-color: #1a1a1a;
     --button-background: #27272a;
     --button-hover: #1f2937;
+    --emerald-color: #50C878;
+    /* Emerald color */
 }
 
 /* Base styles for the body */
@@ -35,7 +37,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
+    position: relative;
 }
 
 /* Header styles */
@@ -52,6 +54,17 @@ header {
     /* Bold text */
     line-height: 4rem;
     margin-bottom: 1rem;
+}
+
+/* Emerald color class */
+.highlight.emerald {
+    color: var(--emerald-color);
+}
+
+/* Styles for the bio */
+.bio {
+    font-weight: bold;
+    /* Make bio text bold */
 }
 
 /* Button container styles */
@@ -111,6 +124,16 @@ header {
 .repo-source-button:hover {
     background-color: var(--button-hover);
     /* Change background color on hover */
+}
+
+/* Styles for the datetime section */
+.datetime {
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    text-align: right;
+    font-weight: bold;
+    /* Make datetime text bold */
 }
 
 /* Fade-in effect for header text */
