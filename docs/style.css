@@ -202,12 +202,13 @@ header {
 /* Footer styles */
 footer {
     background-color: var(--background-color);
-    /* Same as body background color */
     color: var(--text-color);
     padding: 1rem 0;
     text-align: center;
     border-top: 1px solid var(--accent-color);
     margin-top: 2rem;
+    font-weight: bold;
+    /* Make all text in footer bold */
 }
 
 footer .container {
