@@ -198,3 +198,30 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
     /* Smooth transitions */
 }
+
+/* Footer styles */
+footer {
+    background-color: var(--background-color);
+    /* Same as body background color */
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--accent-color);
+    margin-top: 2rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* Adjust spacing between elements */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a.repo-source-button {
+    margin-left: 1rem;
+}
