@@ -1,7 +1,9 @@
-/* Import Ubuntu font */
+/* Import Recursive Regular font */
 @font-face {
-    font-family: 'Ubuntu';
-    src: url('resources/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-family: 'Recursive Regular';
+    src: url('resources/fonts/Recursive-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Define CSS variables for colors */
@@ -19,7 +21,8 @@
 
 /* Base styles for the body */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Recursive Regular', sans-serif;
+    /* Apply Recursive Regular font */
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
@@ -88,7 +91,8 @@ header {
 
 /* Styles for the bio */
 .bio {
-    font-weight: bold;
+    font-weight: normal;
+    /* Ensure bio text is normal weight */
 }
 
 /* Styles for the location section */
@@ -155,6 +159,8 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 30px;
     height: 30px;
+    margin-left: 5px;
+    /* Adjust if necessary to fine-tune positioning */
 }
 
 .repo-source-button img {
@@ -163,6 +169,30 @@ header {
 }
 
 .repo-source-button:hover {
+    background-color: var(--button-hover);
+}
+
+/* License button styles */
+.license-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-background);
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    /* Adjust if necessary to fine-tune positioning */
+}
+
+.license-button img {
+    width: 20px;
+    height: 20px;
+}
+
+.license-button:hover {
     background-color: var(--button-hover);
 }
 
@@ -187,12 +217,14 @@ footer {
     padding: 1rem 0;
     text-align: center;
     margin-top: 2rem;
-    font-weight: bold;
+    font-weight: normal;
+    /* Set footer text to normal weight */
 }
 
 footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* Center align items */
     align-items: center;
 }
 
@@ -200,7 +232,13 @@ footer .container {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Adjust the spacing between text and icon */
+    /* Adjust the spacing between text and icons */
+}
+
+/* Adjust margin for buttons if necessary */
+.repo-source-button,
+.license-button {
+    margin-left: 5px;
 }
 
 /* Additional CSS for Dark Mode */
