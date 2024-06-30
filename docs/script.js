@@ -42,36 +42,30 @@ document.addEventListener('DOMContentLoaded', function () {
     function setupScrollEffect() {
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-            } else {
-                header.style.backgroundColor = 'transparent';
-            }
+            header.style.opacity = 1 - window.scrollY / 500;
         });
     }
 
-    // Function to update the current time and date
-    function updateDateTime() {
-        const now = new Date();
-        const time = now.toLocaleTimeString();
-        const date = now.toLocaleDateString();
-
-        document.getElementById('current-time').textContent = time;
-        document.getElementById('current-date').textContent = date;
+    // Display current time and date
+    function displayDateTime() {
+        const timeElement = document.getElementById('current-time');
+        const dateElement = document.getElementById('current-date');
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const updateTime = () => {
+            const now = new Date();
+            timeElement.textContent = now.toLocaleTimeString();
+            dateElement.textContent = now.toLocaleDateString(undefined, options);
+        };
+        updateTime(); // Initial call
+        setInterval(updateTime, 1000); // Update every second
     }
 
     // Initialize all functions
-    function init() {
-        animateHeaderText();
-        setupRepoButton();
-        addHoverEffectsToSocialButtons();
-        setupScrollEffect();
-        updateDateTime();
-        setInterval(updateDateTime, 1000); // Update the time every second
-        // Uncomment the line below to dynamically load a font
-        // loadFont('Ubuntu', 'resources/fonts/Ubuntu-Bold.ttf');
-    }
-
-    // Run the initialization function on DOM content loaded
-    init();
+    animateHeaderText();
+    setupRepoButton();
+    addHoverEffectsToSocialButtons();
+    setupScrollEffect();
+    displayDateTime();
+    // Uncomment the line below to dynamically load the font (optional)
+    // loadFont('Ubuntu', 'resources/fonts/Ubuntu-Bold.ttf');
 });
