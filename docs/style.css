@@ -20,16 +20,14 @@
 /* Base styles for the body */
 body {
     font-family: 'Poppins', sans-serif;
-    /* Set the base font */
     background-color: var(--background-color);
-    /* Use background color from variables */
     color: var(--text-color);
-    /* Use text color from variables */
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Container to center content */
@@ -49,8 +47,14 @@ header {
 /* Styles for the profile section */
 .profile-section {
     margin-top: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    position: relative;
 }
 
+/* Styles for the profile within the profile-section */
 .profile {
     display: flex;
     align-items: center;
@@ -63,13 +67,16 @@ header {
     height: 100px;
     border-radius: 50%;
     border: 2px solid var(--emerald-color);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
 }
 
 .content h1 {
     font-size: 2rem;
-    /* Large font size for header text */
     font-weight: 700;
-    /* Bold text */
     line-height: 3rem;
     margin-bottom: 0.5rem;
 }
@@ -82,7 +89,6 @@ header {
 /* Styles for the bio */
 .bio {
     font-weight: bold;
-    /* Make bio text bold */
 }
 
 /* Styles for the location section */
@@ -98,11 +104,20 @@ header {
     height: 20px;
 }
 
+/* Styles for the datetime section within the profile-section */
+.datetime {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+}
+
 /* Button container styles */
 .button-container {
     display: flex;
     gap: 20px;
-    /* Space between buttons */
     margin-top: 1rem;
 }
 
@@ -112,13 +127,11 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--button-background);
-    /* Use button background color from variables */
-    padding: 5px;
+    padding: 10px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-    /* Smooth transition for background color */
-    width: 30px;
-    height: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 40px;
+    height: 40px;
 }
 
 .social-button img {
@@ -128,23 +141,18 @@ header {
 
 .social-button:hover {
     background-color: var(--button-hover);
-    /* Change background color on hover */
+    transform: scale(1.1);
 }
 
 /* Repo source button styles */
 .repo-source-button {
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     background-color: var(--button-background);
-    /* Use button background color from variables */
     padding: 5px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
-    /* Smooth transition for background color */
+    transition: background-color 0.3s ease, transform 0.3s ease;
     width: 30px;
     height: 30px;
 }
@@ -156,17 +164,6 @@ header {
 
 .repo-source-button:hover {
     background-color: var(--button-hover);
-    /* Change background color on hover */
-}
-
-/* Styles for the datetime section */
-.datetime {
-    position: absolute;
-    right: 2rem;
-    top: 1rem;
-    text-align: right;
-    font-weight: bold;
-    /* Make datetime text bold */
 }
 
 /* Fade-in effect for header text */
@@ -174,29 +171,13 @@ header {
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeIn 1s forwards;
-    /* Apply fade-in animation */
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
-        /* Final opacity */
         transform: translateY(0);
-        /* Final position */
     }
-}
-
-/* Hover effect for social buttons */
-.social-button.hovered {
-    transform: scale(1.1);
-    /* Slightly enlarge the button */
-}
-
-/* Smooth transition for hover effects */
-.social-button,
-.repo-source-button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transitions */
 }
 
 /* Footer styles */
@@ -205,24 +186,29 @@ footer {
     color: var(--text-color);
     padding: 1rem 0;
     text-align: center;
-    border-top: 1px solid var(--accent-color);
     margin-top: 2rem;
     font-weight: bold;
-    /* Make all text in footer bold */
 }
 
 footer .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    /* Adjust spacing between elements */
 }
 
-footer p {
-    margin: 0;
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adjust the spacing between text and icon */
 }
 
-footer a.repo-source-button {
-    margin-left: 1rem;
+/* Additional CSS for Dark Mode */
+.dark-mode {
+    --background-color: #000;
+    --text-color: #fff;
+    --button-background: #444;
+    --button-hover: #666;
+    --accent-color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
