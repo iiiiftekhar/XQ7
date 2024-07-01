@@ -131,16 +131,21 @@ header {
     align-items: center;
     justify-content: center;
     background-color: var(--button-background);
-    padding: 10px;
+    padding: 5px;
+    /* Adjust padding to match repo source button */
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    /* Adjust width to match repo source button */
+    height: 30px;
+    /* Adjust height to match repo source button */
 }
 
 .social-button img {
     width: 20px;
+    /* Set width to match repo source button */
     height: 20px;
+    /* Set height to match repo source button */
 }
 
 .social-button:hover {
@@ -159,8 +164,6 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 30px;
     height: 30px;
-    margin-left: 5px;
-    /* Adjust if necessary to fine-tune positioning */
 }
 
 .repo-source-button img {
@@ -183,8 +186,6 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
     width: 30px;
     height: 30px;
-    margin-left: 5px;
-    /* Adjust if necessary to fine-tune positioning */
 }
 
 .license-button img {
@@ -223,8 +224,7 @@ footer {
 
 footer .container {
     display: flex;
-    justify-content: center;
-    /* Center align items */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -235,10 +235,11 @@ footer .container {
     /* Adjust the spacing between text and icons */
 }
 
-/* Adjust margin for buttons if necessary */
-.repo-source-button,
-.license-button {
-    margin-left: 5px;
+.footer-icons {
+    margin-top: 0.5rem;
+    /* Add some space between text and icons */
+    display: flex;
+    gap: 10px;
 }
 
 /* Additional CSS for Dark Mode */
