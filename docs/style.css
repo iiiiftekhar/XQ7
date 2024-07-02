@@ -39,22 +39,37 @@ body {
     margin: 0 auto;
     padding: 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    /* Center the profile section vertically */
 }
 
-/* Header styles */
-header {
-    padding-top: 2rem;
-    flex: 1;
-}
-
-/* Styles for the profile section */
+/* Profile section to cover the height */
 .profile-section {
-    margin-top: 3rem;
     background: rgba(255, 255, 255, 0.05);
     padding: 1.5rem;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Distribute space between header, profile content, and footer */
+    flex-grow: 1;
+    /* Allow the profile section to grow and fill the available space */
+}
+
+/* Header styles inside profile-section */
+.header {
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Styles for the datetime section */
+.datetime {
+    margin-bottom: 1rem;
 }
 
 /* Styles for the profile within the profile-section */
@@ -106,16 +121,6 @@ header {
 .location-icon {
     width: 20px;
     height: 20px;
-}
-
-/* Styles for the datetime section within the profile-section */
-.datetime {
-    text-align: right;
-    font-weight: bold;
-    margin-top: 1rem;
-    position: absolute;
-    top: -1.5rem;
-    right: 1.5rem;
 }
 
 /* Button container styles */
@@ -197,6 +202,33 @@ header {
     background-color: var(--button-hover);
 }
 
+/* Footer styles inside profile-section */
+.footer {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: normal;
+    /* Set footer text to normal weight */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Adjust the spacing between text and icons */
+    margin-bottom: 0.5rem;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
 /* Fade-in effect for header text */
 .fade-in {
     opacity: 0;
@@ -209,37 +241,6 @@ header {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Footer styles */
-footer {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 1rem 0;
-    text-align: center;
-    margin-top: 2rem;
-    font-weight: normal;
-    /* Set footer text to normal weight */
-}
-
-footer .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    /* Adjust the spacing between text and icons */
-}
-
-.footer-icons {
-    margin-top: 0.5rem;
-    /* Add some space between text and icons */
-    display: flex;
-    gap: 10px;
 }
 
 /* Additional CSS for Dark Mode */
