@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Display current time and date
+    // Function to display current time and date
     function displayDateTime() {
         const timeElement = document.getElementById('current-time');
         const dateElement = document.getElementById('current-date');
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(updateTime, 1000); // Update every second
     }
 
-    // Initialize all functions
+    // Initialize all functions when DOM content is loaded
     animateHeaderText();
     setupRepoButton();
     addHoverEffectsToSocialButtons();
