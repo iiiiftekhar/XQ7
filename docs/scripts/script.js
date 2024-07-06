@@ -61,28 +61,27 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Function to load content dynamically
-function loadContent(section) {
-    console.log('Loading content for section:', section);
-    const contentElement = document.getElementById('dynamic-content');
-    fetch(`/docs/sections/${section}.html`)
-        .then(response => {
-            console.log('Response status:', response.status);
-            if (!response.ok) {
-                throw new Error(`Failed to load ${section} content. Status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log('Content loaded successfully:', data);
-            contentElement.innerHTML = data;
-        })
-        .catch(error => {
-            console.error('Error loading content:', error.message);
-            contentElement.innerHTML = `<p>Error loading ${section} content. Please try again later.</p>`;
-        });
-}
-
-
+    function loadContent(section) {
+        console.log('Loading content for section:', section);
+        const contentElement = document.getElementById('dynamic-content');
+        fetch(`/docs/sections/${section}.html`)
+            .then(response => {
+                console.log('Response status:', response.status);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${section} content. Status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log('Content loaded successfully:', data);
+                contentElement.innerHTML = data;
+                window.history.pushState({ section }, '', `http://127.0.0.1:3000/docs/${section}.html`);
+            })
+            .catch(error => {
+                console.error('Error loading content:', error.message);
+                contentElement.innerHTML = `<p>Error loading ${section} content. Please try again later.</p>`;
+            });
+    }
 
     // Initialize all functions when DOM content is loaded
     animateHeaderText();
@@ -97,5 +96,11 @@ function loadContent(section) {
 
     // Expose the loadContent function globally
     window.loadContent = loadContent;
-});
 
+    // Listen to the popstate event to handle browser navigation
+    window.addEventListener('popstate', event => {
+        if (event.state && event.state.section) {
+            loadContent(event.state.section);
+        }
+    });
+});
