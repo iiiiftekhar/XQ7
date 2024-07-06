@@ -210,12 +210,14 @@ body {
 
 .section-button {
     background-color: var(--card-background);
-    /* Match the card color */
+    color: var(--primary-color);
     text-align: center;
     line-height: 28px;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 8px;
-    /* Rounded corners */
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
 }
 
 .section-button#home {
@@ -247,6 +249,7 @@ body {
 
 .section-button:hover {
     background-color: var(--button-hover);
+    color: var(--text-color);
 }
 
 .section-button:hover a {
