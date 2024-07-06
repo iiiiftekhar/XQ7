@@ -16,7 +16,8 @@
     --button-background: #27272a;
     --button-hover: #1f2937;
     --emerald-color: #50C878;
-    /* Emerald color */
+    --card-background: rgba(255, 255, 255, 0.05);
+    /* Card background color */
 }
 
 /* Base styles for the body */
@@ -56,7 +57,7 @@ body {
     /* Maximum height for the profile section */
     overflow-y: auto;
     /* Add vertical scroll if content exceeds height */
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card-background);
     padding: 1.5rem;
     border-radius: 8px;
     backdrop-filter: blur(10px);
@@ -208,15 +209,33 @@ body {
 }
 
 .section-button {
-    width: 84.6px;
-    /* Adjusted width */
-    height: 28px;
-    /* Adjusted height */
-    background-color: var(--emerald-color);
-    border-radius: 8px;
+    background-color: var(--card-background);
+    /* Match the card color */
     text-align: center;
     line-height: 28px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+    /* Rounded corners */
+}
+
+.section-button#home {
+    width: 84.8px;
+    height: 28px;
+}
+
+.section-button#projects {
+    width: 106.233px;
+    height: 28px;
+}
+
+.section-button#skills {
+    width: 85.6px;
+    height: 28px;
+}
+
+.section-button#notes {
+    width: 85.6px;
+    height: 28px;
 }
 
 .section-button a {

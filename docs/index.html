@@ -31,7 +31,8 @@
             privacy technologies as a
             privacy advocate. Interested in technology's impact on society, I delve into politics and history.
             Enthusiastic about
-            blockchain and Artificial Inteligence, I focus on ethical solutions, contributing to the tech community, and advocating for
+            blockchain and Artificial Inteligence, I focus on ethical solutions, contributing to the tech community, and
+            advocating for
             digital rights and privacy.
           </p>
         </div>
@@ -59,22 +60,26 @@
       </div>
     </div>
 
-<!-- Sections -->
-<div class="sections">
-  <div id="home" class="section-button">
-    <a href="#home">Home</a>
-  </div>
-  <div id="projects" class="section-button">
-    <a href="#projects">Projects</a>
-  </div>
-  <div id="skills" class="section-button">
-    <a href="#skills">Skills</a>
-  </div>
-  <div id="notes" class="section-button">
-    <a href="#notes">Notes</a>
-  </div>
-</div>
+    <!-- Sections -->
+    <div class="sections">
+      <div id="home" class="section-button">
+        <a href="#home" onclick="loadContent('home')">Home</a>
+      </div>
+      <div id="projects" class="section-button">
+        <a href="#projects" onclick="loadContent('projects')">Projects</a>
+      </div>
+      <div id="skills" class="section-button">
+        <a href="#skills" onclick="loadContent('skills')">Skills</a>
+      </div>
+      <div id="notes" class="section-button">
+        <a href="#notes" onclick="loadContent('notes')">Notes</a>
+      </div>
+    </div>
 
+    <!-- Dynamic Content Section -->
+    <div id="dynamic-content">
+      <!-- Initial content will be loaded here -->
+    </div>
 
     <!-- Footer -->
     <div class="footer">
@@ -96,8 +101,8 @@
   </div>
 
   <!-- Link to external JavaScript file -->
-  <script src="scripts\script.js"></script>
-  <script src="scripts\contributions.js"></script>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/contributions.js"></script>
 </body>
 
 </html>

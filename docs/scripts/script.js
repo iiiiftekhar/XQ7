@@ -60,12 +60,37 @@ document.addEventListener('DOMContentLoaded', function () {
         setInterval(updateTime, 1000); // Update every second
     }
 
+    // Function to load content dynamically
+    function loadContent(section) {
+        const contentElement = document.getElementById('dynamic-content');
+        fetch(`sections/${section}.html`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                contentElement.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading content:', error);
+                contentElement.innerHTML = '<p>Error loading content. Please try again later.</p>';
+            });
+    }
+
     // Initialize all functions when DOM content is loaded
     animateHeaderText();
     setupRepoButton();
     addHoverEffectsToSocialButtons();
     setupScrollEffect();
     displayDateTime();
+    loadContent('home'); // Load home content initially
+
     // Uncomment the line below to dynamically load the font (optional)
     // loadFont('Ubuntu', 'resources/fonts/Ubuntu-Bold.ttf');
+
+    // Expose the loadContent function globally
+    window.loadContent = loadContent;
 });
+
