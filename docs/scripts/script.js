@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 console.log('Content loaded successfully:', data);
                 contentElement.innerHTML = data;
-                window.history.pushState({ section }, '', `http://127.0.0.1:3000/docs/${section}.html`);
+                window.history.pushState({ section }, '', `#${section}`);
             })
             .catch(error => {
                 console.error('Error loading content:', error.message);
