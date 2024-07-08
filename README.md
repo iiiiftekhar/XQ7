@@ -1,3 +1,14 @@
+![License](https://img.shields.io/badge/Apache-2.0-license)
+![Stars](https://img.shields.io/github/stars/iiiiftekhar/XQ7?style=flat&logo=github)
+
+
+## Built with
+
+| Name           | Info                                            |
+| -------------- | ----------------------------------------------- |
+| Styling        | [TailwindCSS](https://tailwindcss.com/)         |
+
+
 ## Setup
 
 1. **Clone the repository:**
